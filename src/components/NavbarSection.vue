@@ -4,6 +4,7 @@ import { ref } from 'vue'
 const Links = ref({
   home: 'Home',
   about: 'About me',
+  service: 'Services',
   skills: 'Skilss',
   experiences: 'Experiences',
   portfolio: 'Portfolio',
@@ -31,6 +32,11 @@ const scrollToSection = (e: Event, id: string) => {
       <li>
         <a href="#about" @click="scrollToSection($event, 'about')" class="hover:text-[#fcb702]">{{
           Links.about
+        }}</a>
+      </li>
+      <li>
+        <a href="#service" @click="scrollToSection($event, 'service')" class="hover:text-[#fcb702]">{{
+          Links.service
         }}</a>
       </li>
       <li>
