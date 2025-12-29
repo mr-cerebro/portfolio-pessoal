@@ -2,6 +2,7 @@
 import NavbarSection from './components/NavbarSection.vue'
 import AboutView from './views/AboutView.vue'
 import HomeView from './views/HomeView.vue'
+import ServiceView from './views/ServiceView.vue'
 
 const scrollToSection = (e: Event, id: string) => {
   e.preventDefault()
@@ -24,12 +25,16 @@ const scrollToSection = (e: Event, id: string) => {
       <section id="about">
         <AboutView />
       </section>
+
+      <section id="service">
+        <ServiceView />
+      </section>
     </main>
   </div>
 </template>
 
 <style scoped>
-  html {
+html {
   scroll-behavior: smooth;
 }
 

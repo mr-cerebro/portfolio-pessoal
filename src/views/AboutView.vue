@@ -8,7 +8,7 @@
         reprehenderit id, omnis aliquam tempore tenetur.
       </p>
       <button
-        class="bg-[#fcb702] hover:bg-[#fcb502cf] text-[#151515] px-8 py-3 rounded font-bold flex items-center gap-2 transition"
+        class="bg-[#fcb702] hover:bg-[#fcb502cf] text-[#151515] px-8 py-3 rounded font-bold flex items-center gap-2 transition cursor-pointer"
       >
         Download CV<i class="fa fa-download"></i>
       </button>
