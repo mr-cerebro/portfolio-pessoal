@@ -21,7 +21,7 @@ const scrollToSection = (e: Event, id: string) => {
 </script>
 
 <template>
-<nav class="flex justify-between items-center px-12 py-6 mx-w-7xl mx-auto --font-open">
+<nav class="fixed top-0 left-0 w-full flex justify-between items-center px-12 py-6 mx-w-7xl mx-auto --font-open border-b shadow-lg border-gray-800">
     <div class="text-xl font-bol">Paulo Pessoa</div>
     <ul class="hidden md:flex space-x-6 text-sm font-medium text-gray-300">
       <li>

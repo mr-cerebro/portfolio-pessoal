@@ -17,7 +17,7 @@ const scrollToSection = (e: Event, id: string) => {
   <div>
     <NavbarSection @navigate="scrollToSection" />
 
-    <main>
+    <main class="pt-24">
       <section id="home">
         <HomeView />
       </section>
