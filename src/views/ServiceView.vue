@@ -7,7 +7,7 @@
         <div
           class="w-16 h-16 bg-[#fcb702] rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg"
         >
-          <i class="fas fa-lightbulb text-2xl"></i>
+          <i class="fa fa-desktop text-2xl text-[#151515]"></i>
         </div>
         <h3 class="text-xl font-bold mb-4">Development</h3>
         <p class="text-gray-400 text-sm leading-relaxed">
@@ -22,7 +22,7 @@
         <div
           class="w-16 h-16 bg-[#fcb702] rounded-full flex items-center justify-center mx-auto mb-6"
         >
-          <i class="fas fa-medal text-2xl"></i>
+          <i class="fa fa-line-chart text-2xl text-[#151515]"></i>
         </div>
         <h3 class="text-xl font-bold mb-4">Marketing</h3>
         <p class="text-gray-400 text-sm leading-relaxed">
@@ -35,7 +35,7 @@
         <div
           class="w-16 h-16 bg-[#fcb702] rounded-full flex items-center justify-center mx-auto mb-6"
         >
-          <i class="fas fa-project-diagram text-2xl"></i>
+          <i class="fa fa-picture-o text-2xl text-[#151515]"></i>
         </div>
         <h3 class="text-xl font-bold mb-4">Web Design</h3>
         <p class="text-gray-400 text-sm leading-relaxed">

@@ -1,74 +1,70 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onMounted, onUnmounted, ref } from 'vue'
 
-const Links = ref({
-  home: 'Home',
-  about: 'About me',
-  service: 'Services',
-  skills: 'Skilss',
-  experiences: 'Experiences',
-  portfolio: 'Portfolio',
-  contact: 'Contact me',
+const isScrolled = ref(false)
+const activeSection = ref('home')
+
+const handleScroll = () => {
+  isScrolled.value = window.scrollY > 50
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '-50% 0px -50% 0px',
+    threshold: 0,
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        activeSection.value = entry.target.id
+      }
+    })
+  }, observerOptions)
+
+  document.querySelectorAll('section[id]').forEach((section) => {
+    observer.observe(section)
+  })
 })
 
-const scrollToSection = (e: Event, id: string) => {
-  e.preventDefault()
-  const element = document.getElementById(id)
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' })
-  }
-}
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 </script>
 
 <template>
-<nav class="fixed top-0 left-0 w-full flex justify-between items-center px-12 py-6 mx-w-7xl mx-auto --font-open border-b shadow-lg border-gray-800">
+  <nav
+    :class="[
+      'fixed top-0 left-0 w-full z-50 transition-all duration-300 px-12 items-center flex justify-between',
+      isScrolled ? 'bg-[#151515]/90 backdrop-blur-md py-4' : 'bg-transparent py-8',
+    ]"
+  >
     <div class="text-xl font-bol">Paulo Pessoa</div>
-    <ul class="hidden md:flex space-x-6 text-sm font-medium text-gray-300">
-      <li>
-        <a href="#home" @click="scrollToSection($event, 'home')" class="hover:text-[#fcb702]">{{
-          Links.home
-        }}</a>
-      </li>
-      <li>
-        <a href="#about" @click="scrollToSection($event, 'about')" class="hover:text-[#fcb702]">{{
-          Links.about
-        }}</a>
-      </li>
-      <li>
-        <a href="#service" @click="scrollToSection($event, 'service')" class="hover:text-[#fcb702]">{{
-          Links.service
-        }}</a>
-      </li>
-      <li>
-        <a href="#skills" @click="scrollToSection($event, 'skills')" class="hover:text-[#fcb702]">{{
-          Links.skills
-        }}</a>
-      </li>
-      <li>
+    <ul class="hidden md:flex space-x-6 text-sm font-medium">
+      <li
+        v-for="(label, key) in {
+          home: 'Home',
+          about: 'About me',
+          service: 'Services',
+          skills: 'Skills',
+          portfolio: 'Portfolio',
+          contact: 'Contact',
+        }"
+        :key="key"
+      >
         <a
-          href="#experiences"
-          @click="scrollToSection($event, 'experiences')"
-          class="hover:text-[#fcb702]"
-          >{{ Links.experiences }}</a
+          :href="'#' + key"
+          :class="[
+            'transition-colors duration-300',
+            activeSection === key ? 'text-[#fcb702]' : 'text-gray-300 hover:text-white',
+          ]"
         >
-      </li>
-      <li>
-        <a
-          href="#portfolio"
-          @click="scrollToSection($event, 'portfolio')"
-          class="hover:text-[#fcb702]"
-          >{{ Links.portfolio }}</a
-        >
-      </li>
-      <li>
-        <a
-          href="#contact"
-          @click="scrollToSection($event, 'contact')"
-          class="hover:text-[#fcb702]"
-          >{{ Links.contact }}</a
-        >
+          {{ label }}
+        </a>
       </li>
     </ul>
   </nav>
 </template>
-

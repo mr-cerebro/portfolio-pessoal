@@ -40,5 +40,6 @@ html {
 
 section {
   min-height: 100vh;
+  scroll-margin-top: 80px;
 }
 </style>
