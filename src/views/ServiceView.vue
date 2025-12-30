@@ -31,7 +31,7 @@
         </p>
       </div>
 
-      <div class="bg-[#2a2f35] p-10 rounded-lg group hover:bg-[#32383e] transition">
+      <div class="bg-[#2a2f35] p-10 rounded-lg group hover:bg-[#33323e] transition">
         <div
           class="w-16 h-16 bg-[#fcb702] rounded-full flex items-center justify-center mx-auto mb-6"
         >
