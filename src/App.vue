@@ -45,6 +45,6 @@ html {
 
 section {
   min-height: 100vh;
-  scroll-margin-top: 80px;
+  scroll-margin-top: 5px;
 }
 </style>
