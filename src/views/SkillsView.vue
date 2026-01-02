@@ -88,10 +88,3 @@ const timeline = ref([
   },
 ])
 </script>
-
-<style scoped>
-/* Ajuste customizado para o radial-progress se necessário */
-.radial-progress:after {
-  @apply border-[#1e2329];
-}
-</style>

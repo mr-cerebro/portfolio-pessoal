@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import NavbarSection from './components/NavbarSection.vue'
 import AboutView from './views/AboutView.vue'
+import ContatcView from './views/ContatcView.vue'
 import HomeView from './views/HomeView.vue'
 import PortfolioView from './views/PortfolioView.vue'
 import ServiceView from './views/ServiceView.vue'
@@ -38,6 +39,10 @@ const scrollToSection = (e: Event, id: string) => {
 
       <section id="portfolio">
         <PortfolioView />
+      </section>
+
+      <section id="contact">
+        <ContatcView />
       </section>
     </main>
   </div>
