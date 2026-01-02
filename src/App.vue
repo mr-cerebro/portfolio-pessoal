@@ -2,6 +2,7 @@
 import NavbarSection from './components/NavbarSection.vue'
 import AboutView from './views/AboutView.vue'
 import HomeView from './views/HomeView.vue'
+import PortfolioView from './views/PortfolioView.vue'
 import ServiceView from './views/ServiceView.vue'
 import SkillsView from './views/SkillsView.vue'
 
@@ -32,7 +33,11 @@ const scrollToSection = (e: Event, id: string) => {
       </section>
 
       <section id="skills">
-        <SkillsView/>
+        <SkillsView />
+      </section>
+
+      <section id="portfolio">
+        <PortfolioView />
       </section>
     </main>
   </div>
