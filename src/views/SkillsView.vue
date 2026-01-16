@@ -3,7 +3,7 @@
     <section class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-4 mb-32">
       <div v-for="skill in skills" :key="skill.name" class="flex flex-col items-center gap-4">
         <div
-          class="radial-progress text-[#2ecc71] border-4 border-[#2a2f35] bg-[#1e2329]"
+          class="radial-progress text-[#fcb702] border-4 border-[#2a2f35] bg-[#1e2329]"
           :style="{ '--value': skill.value, '--size': '8rem', '--thickness': '4px' }"
           role="progressbar"
         >
@@ -38,14 +38,14 @@ import { ref } from 'vue'
 
 // Dados para as habilidades (Skills)
 const skills = ref([
-  { name: 'HTML', value: 75 },
+  { name: 'HTML', value: 85 },
   { name: 'CSS3', value: 70 },
-  { name: 'Bootstrap', value: 85 },
-  { name: 'Jquery', value: 60 },
+  { name: 'Tailwindcss', value: 50 },
+  { name: 'VueJS', value: 60 },
   { name: 'Javascript', value: 65 },
   { name: 'Photoshop', value: 88 },
   { name: 'Marketing', value: 70 },
-  { name: 'Branding', value: 80 },
+  { name: 'Figma', value: 60 },
 ])
 
 // Dados para Educação e Experiência
