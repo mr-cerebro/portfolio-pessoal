@@ -2,7 +2,7 @@
 
 Este é o repositório do meu portfólio pessoal, desenvolvido com foco em alta performance, design responsivo e navegação fluida em página única (One Page).
 
-![Portfolio Preview](/public/img/profille.png)
+![Portfolio Preview](/public/img/profile-2.png)
 
 ## 🛠️ Tecnologias Utilizadas
 
