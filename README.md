@@ -2,7 +2,9 @@
 
 Este é o repositório do meu portfólio pessoal, desenvolvido com foco em alta performance, design responsivo e navegação fluida em página única (One Page).
 
-![Portfolio Preview](/img/profille.png) ## 🛠️ Tecnologias Utilizadas
+![Portfolio Preview](/public/img/profille.png)
+
+## 🛠️ Tecnologias Utilizadas
 
 * **Vue.js 3** (Composition API + `<script setup>`)
 * **TypeScript** (Segurança e tipagem de dados)
