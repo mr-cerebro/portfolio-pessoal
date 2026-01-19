@@ -42,36 +42,6 @@
       </form>
     </section>
 
-    <section
-      class="max-w-5xl mx-auto mb-32 overflow-hidden rounded-sm shadow-2xl flex flex-col md:flex-row"
-    >
-      <div
-        class="md:w-1/2 bg-[#2a2f35] p-12 flex flex-col justify-center items-center text-center space-y-4"
-      >
-        <p class="text-xl font-medium">support@example.com</p>
-        <p class="text-2xl font-bold">1234-123-123</p>
-        <p class="text-gray-400 text-sm max-w-xs">
-          3481 Melrose Place, Beverly Hills <br />
-          CA 90210
-        </p>
-      </div>
-
-      <div class="md:w-1/2 h-64 md:h-auto bg-gray-700 relative">
-        <div
-          class="absolute inset-0 bg-cover bg-center opacity-80"
-          style="
-            background-image: url('https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/-118.37,34.08,12/500x300?access_token=YOUR_TOKEN');
-          "
-        >
-          <img
-            src="https://via.placeholder.com/600x400/2a2f35/ffffff?text=Map+Preview"
-            class="w-full h-full object-cover"
-            alt="Map"
-          />
-        </div>
-      </div>
-    </section>
-
     <footer class="max-w-6xl mx-auto text-center border-t border-gray-800 pt-12 pb-8">
       <h3 class="text-lg font-bold mb-6">Paulo Pessoa</h3>
       <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-gray-400 mb-12">
